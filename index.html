@@ -2,110 +2,316 @@
 <html>
 <head>
   <title>BuyGuide</title>
-  <style>
-
-
-body {
-  font-size: 125%;
-  line-height: 1.5;
-}
-
-nav,
-nav ul {
-  display: flex;
-  flex-flow: row wrap;
-}
-
-nav {
-  background: #2b2f2c;
-  color: #fff;
-  padding: 1rem;
-  position: sticky;
-  top: 0;
-}
-
-nav ul {
-  list-style: none;
-  margin: 0;
-}
-
-nav li {
-  margin-right: 25px;
-}
-
-nav li a {
-  color: yellow;
-}
-
-section {
-  padding: 1rem 3rem;
-}
-
-section:target {
-  background: lightyellow;
-}
-
-
-    
-  </style>
-  
+  <link rel="stylesheet" href="styles.css">
 </head>
 
-  
+
 <body>
-<h1>Hi!</h1>
-<p>You can reach me if you know me</p>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>Site title</title>
+    <meta name="description" content="Site description">
+
+    <!-- Recommended minimum -->
+    <meta property="og:title" content="Site title">
+    <meta property="og:description" content="Site description">
+    <meta property="og:image" content="img/site-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- You could also inline the stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+
+    <header>
+      <h1>
+        <a href="#home">Guide</a>
+      </h1>
+      <nav>
+        <a href="#deliberationstation">Deliberation Station</a>
+        <a href="#goalspriorities">Financial Goals and Priorities</a>
+        <a href="#testimonies">Testimonies</a>
+        <a href="#codex">Codex</a>
+        <a href="#maattabel">Maattabel</a>
+      </nav>
+    </header>
+
+    <main>
+
+      <section id="home"> <!-- HOME -->
+
+        <p>This is the homepage, displayed by default.</p>
+
+      </section>
+
+      <section id="deliberationstation"> <!-- ABOUT -->
+
+        <div class="question">
+             <p>Have I thought about it for at least two weeks?</p>
+             <label>
+                 <input type="radio" name="question1" value="yes"> Yes
+             </label>
+             <label>
+                 <input type="radio" name="question1" value="no"> No
+             </label>
+         </div>
+
+         <div class="question">
+             <p>Does it solve a problem that I've genuinely noticed?</p>
+             <label>
+                 <input type="radio" name="question2" value="yes"> Yes
+             </label>
+             <label>
+                 <input type="radio" name="question2" value="no"> No
+             </label>
+         </div>
+
+         <div class="question">
+             <p>Do I already own something similar?</p>
+             <label>
+                 <input type="radio" name="question3" value="yes"> No
+             </label>
+             <label>
+                 <input type="radio" name="question3" value="no"> Yes
+             </label>
+         </div>
+         <div class="question">
+             <p>Is buying it worth giving up progress towards my next financial goal?</p>
+             <label>
+                 <input type="radio" name="question4" value="yes"> Yes
+             </label>
+             <label>
+                 <input type="radio" name="question4" value="no"> No
+             </label>
+         </div>
+         <div class="question">
+             <p>Where will it be in five years?</p>
+             <label>
+                 <input type="radio" name="question5" value="yes"> Used or in use
+             </label>
+             <label>
+                 <input type="radio" name="question5" value="no"> Not in use
+             </label>
+         </div>
+         <div class="question">
+             <p>Where will I put it if I buy it?</p>
+             <label>
+                 <input type="radio" name="question6" value="yes"> I have a place in mind
+             </label>
+             <label>
+                 <input type="radio" name="question6" value="no"> Not sure
+             </label>
+         </div>
+         <div class="question">
+             <p>How long will I have to work in order to pay for it?</p>
+             <label>
+                 <input type="radio" name="question7" value="yes"> Not very long
+             </label>
+             <label>
+                 <input type="radio" name="question7" value="no"> A significant amount of time
+             </label>
+         </div>
+         <div class="question">
+             <p>Can I be productive and happy without it?</p>
+             <label>
+                 <input type="radio" name="question8" value="yes"> No
+             </label>
+             <label>
+                 <input type="radio" name="question8" value="no"> Yes
+             </label>
+         </div>
+         <div class="question">
+             <p>What is the cost of it per use?</p>
+             <label>
+                 <input type="radio" name="question9" value="yes"> Worth my money
+             </label>
+             <label>
+                 <input type="radio" name="question9" value="no"> Not worth my money
+             </label>
+         </div>
+         <div class="question">
+             <p>Does buying it support my priorities?</p>
+             <label>
+                 <input type="radio" name="question8" value="yes"> Yes
+             </label>
+             <label>
+                 <input type="radio" name="question8" value="no"> No
+             </label>
+         </div>
+         <div class="question">
+             <p>Is this the best way for me to obtain it?</p>
+             <label>
+                 <input type="radio" name="question8" value="yes"> Yes
+             </label>
+             <label>
+                 <input type="radio" name="question8" value="no"> No
+             </label>
+         </div>
+         <div class="question">
+             <p>Is it a high-quality item with a reasonable price tag</p>
+             <label>
+                 <input type="radio" name="question8" value="yes"> Yes
+             </label>
+             <label>
+                 <input type="radio" name="question8" value="no"> No
+             </label>
+         </div>
+         <div class="question">
+             <p>What is my current mental state?</p>
+             <label>
+                 <input type="radio" name="question8" value="yes"> Calm and Neutral
+             </label>
+             <label>
+                 <input type="radio" name="question8" value="no"> Altered by Internal or External forces
+             </label>
+         </div>
+         <div class="question">
+             <p>What is the real reason I'm considering buying it?</p>
+             <label>
+                 <input type="radio" name="question8" value="yes"> An Intentional Reason
+             </label>
+             <label>
+                 <input type="radio" name="question8" value="no"> An Impulsive Reason
+             </label>
+         </div>
+         <div class="question_result">
+             <p></p>
+             <label>
+                 <input type="radio" name="question8" value="yes"> BUY
+             </label>
+             <label>
+                 <input type="radio" name="question8" value="no"> DON'T BUY
+             </label>
+         </div>
 
 
-<article>
-  <nav>
-    Jump to...
-    <ul>
-      <li><a href="#section-1">Section 1</a></li>
-      <li><a href="#section2">Section 2</a></li>
-      <li><a href="#section-3">Section 3</a></li>
-      <li><a href="#section-4">Section 4</a></li>
-      <li><a href="#section-5">Section 5</a></li>
-    </ul>
-  </nav>
-  <section id="section-1">
-    <h2>Section 1</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In sint sunt fuga ut, itaque labore est quos saepe porro repudiandae dicta, vero nam ex aliquid aut consequatur adipisci modi! Totam? Eos dolores quos, sequi molestias ex assumenda sint incidunt unde magni culpa, maxime natus! Eum amet harum enim laboriosam consequuntur dicta quibusdam voluptatem, minima voluptas, libero esse veniam vel! Mollitia?</p>
-    <p>Minus consequuntur ipsa doloremque delectus accusamus eveniet ipsum, doloribus illum neque harum incidunt? Fuga, provident! Adipisci esse quisquam tempore officia dicta nobis, est odio consequuntur deleniti doloribus quia, quaerat incidunt!</p>
-    <p>Tempore, minima impedit iure officiis minus fuga vitae repudiandae a eos quisquam quo, necessitatibus aspernatur! Inventore, sit ex dolorem tenetur officia quasi rem qui, debitis similique earum provident ipsam omnis. Cupiditate iure officia cumque minima a itaque dicta, temporibus autem necessitatibus! Voluptatem dignissimos cepturi, adipisci neque eaque quisquam odit laudantium asperiores iste, eius atque totam distinctio enim magnam pariatur non!</p>
-  </section>
+      </section>
 
-  <section id="section-2">
-    <h2>Section 2</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In sint sunt fuga ut, itaque labore est quos saepe porro repudiandae dicta, vero nam ex aliquid aut consequatur adipisci modi! Totam? Eos dolores quos, sequi molestias ex assumenda sint incidunt unde magni culpa, maxime natus! Eum amet harum enim laboriosam consequuntur dicta quibusdam voluptatem, minima voluptas, libero esse veniam vel! Mollitia?</p>
-    <p>Minus consequuntur ipsa doloremque delectus accusamus eveniet ipsum, doloribus illum neque harum incidunt? Fuga, provident! Adipisci esse quisquam tempore officia dicta nobis, est odio consequuntur deleniti doloribus quia, quaerat incidunt!</p>
-    <p>Tempore, minima impedit iure officiis minus fuga vitae repudiandae a eos quisquam quo, necessitatibus aspernatur! Inventore, sit ex dolorem tenetur officia quasi rem qui, debitis similique earum provident ipsam omnis. Cupiditate iure officia cumque minima a itaque dicta, temporibus autem necessitatibus! Voluptatem dignissimos cepturi, adipisci neque eaque quisquam odit laudantium asperiores iste, eius atque totam distinctio enim magnam pariatur non!</p>
-  </section>
+      <section id="goalspriorities"> <!-- NEWS -->
+          <p>
+            What are my priorities
+          What are my financial goals</p>
 
-  <section id="section-3">
-    <h2>Section 3</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In sint sunt fuga ut, itaque labore est quos saepe porro repudiandae dicta, vero nam ex aliquid aut consequatur adipisci modi! Totam? Eos dolores quos, sequi molestias ex assumenda sint incidunt unde magni culpa, maxime natus! Eum amet harum enim laboriosam consequuntur dicta quibusdam voluptatem, minima voluptas, libero esse veniam vel! Mollitia?</p>
-    <p>Minus consequuntur ipsa doloremque delectus accusamus eveniet ipsum, doloribus illum neque harum incidunt? Fuga, provident! Adipisci esse quisquam tempore officia dicta nobis, est odio consequuntur deleniti doloribus quia, quaerat incidunt!</p>
-    <p>Tempore, minima impedit iure officiis minus fuga vitae repudiandae a eos quisquam quo, necessitatibus aspernatur! Inventore, sit ex dolorem tenetur officia quasi rem qui, debitis similique earum provident ipsam omnis. Cupiditate iure officia cumque minima a itaque dicta, temporibus autem necessitatibus! Voluptatem dignissimos cepturi, adipisci neque eaque quisquam odit laudantium asperiores iste, eius atque totam distinctio enim magnam pariatur non!</p>
-  </section>
+        <article>
+          <h2>Blogging with Joe Bloggs <time datetime="2020-10-10">10.10.2020</time></h2>
+          <p> One <em>could</em> use this setup to write <s>a blog</s> short updates. For images make sure to use the <code>loading="lazy"</code> attribute, so they get loaded only when needed.<label for="lazy">1</label><input type="checkbox" id="lazy"><small>
 
-  <section id="section-4">
-    <h2>Section 4</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In sint sunt fuga ut, itaque labore est quos saepe porro repudiandae dicta, vero nam ex aliquid aut consequatur adipisci modi! Totam? Eos dolores quos, sequi molestias ex assumenda sint incidunt unde magni culpa, maxime natus! Eum amet harum enim laboriosam consequuntur dicta quibusdam voluptatem, minima voluptas, libero esse veniam vel! Mollitia?</p>
-    <p>Minus consequuntur ipsa doloremque delectus accusamus eveniet ipsum, doloribus illum neque harum incidunt? Fuga, provident! Adipisci esse quisquam tempore officia dicta nobis, est odio consequuntur deleniti doloribus quia, quaerat incidunt!</p>
-    <p>Tempore, minima impedit iure officiis minus fuga vitae repudiandae a eos quisquam quo, necessitatibus aspernatur! Inventore, sit ex dolorem tenetur officia quasi rem qui, debitis similique earum provident ipsam omnis. Cupiditate iure officia cumque minima a itaque dicta, temporibus autem necessitatibus! Voluptatem dignissimos cepturi, adipisci neque eaque quisquam odit laudantium asperiores iste, eius atque totam distinctio enim magnam pariatur non!</p>
-  </section>
+            You might be able to use it for <code>iframe</code> embeds too(?), but maybe just write a link to the Youtube video instead.
 
-  <section id="section-5">
-    <h2>Section 5</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In sint sunt fuga ut, itaque labore est quos saepe porro repudiandae dicta, vero nam ex aliquid aut consequatur adipisci modi! Totam? Eos dolores quos, sequi molestias ex assumenda sint incidunt unde magni culpa, maxime natus! Eum amet harum enim laboriosam consequuntur dicta quibusdam voluptatem, minima voluptas, libero esse veniam vel! Mollitia?</p>
-    <p>Minus consequuntur ipsa doloremque delectus accusamus eveniet ipsum, doloribus illum neque harum incidunt? Fuga, provident! Adipisci esse quisquam tempore officia dicta nobis, est odio consequuntur deleniti doloribus quia, quaerat incidunt!</p>
-    <p>Tempore, minima impedit iure officiis minus fuga vitae repudiandae a eos quisquam quo, necessitatibus aspernatur! Inventore, sit ex dolorem tenetur officia quasi rem qui, debitis similique earum provident ipsam omnis. Cupiditate iure officia cumque minima a itaque dicta, temporibus autem necessitatibus! Voluptatem dignissimos cepturi, adipisci neque eaque quisquam odit laudantium asperiores iste, eius atque totam distinctio enim magnam pariatur non!</p>
-  </section>
-</article>
+           </small></p>
+        </article>
+
+        <article>
+          <h2><a href="https://example.com">Why Your Cat Bites You</a> <time datetime="2004-12-12">12.12.2004</time></h2>
+          <p>Honestly you don't want to know.</p>
+        </article>
+
+      </section>
+
+      <section id="testimonies"> <!-- PHOTOS -->
+
+        <p> Past purchases
+            - yay: time timer, runnfly, mousqueton
+            - nay: ill-fitting uniqlo tees, toko lego
+        </p>
 
 
 
-  
+        <p>An example of a photo gallery with a lightbox.</p>
+
+        <!-- You can use this grid of images in any page -->
+
+        <div class="grid">
+          <a href="#img-01"><img loading="lazy" alt="" src="//dummyimage.com/300x300/ddd/bbb"></a>
+          <a href="#img-02"><img loading="lazy" alt="" src="//dummyimage.com/400x300/ddd/bbb"></a>
+          <a href="#img-03"><img loading="lazy" alt="" src="//dummyimage.com/300x400/ddd/bbb"></a>
+          <a href="#img-04"><img loading="lazy" alt="" src="//dummyimage.com/300x300/ddd/bbb"></a>
+          <a href="#img-05"><img loading="lazy" alt="" src="//dummyimage.com/400x300/ddd/bbb"></a>
+          <a href="#img-06"><img loading="lazy" alt="" src="//dummyimage.com/300x400/ddd/bbb"></a>
+          <a href="#img-07"><img loading="lazy" alt="" src="//dummyimage.com/300x300/ddd/bbb"></a>
+          <a href="#img-08"><img loading="lazy" alt="" src="//dummyimage.com/400x300/ddd/bbb"></a>
+          <a href="#img-09"><img loading="lazy" alt="" src="//dummyimage.com/300x400/ddd/bbb"></a>
+          <a href="#img-10"><img loading="lazy" alt="" src="//dummyimage.com/300x300/ddd/bbb"></a>
+          <a href="#img-11"><img loading="lazy" alt="" src="//dummyimage.com/400x300/ddd/bbb"></a>
+          <a href="#img-12"><img loading="lazy" alt="" src="//dummyimage.com/300x400/ddd/bbb"></a>
+          <a href="#img-13"><img loading="lazy" alt="" src="//dummyimage.com/300x300/ddd/bbb"></a>
+          <a href="#img-14"><img loading="lazy" alt="" src="//dummyimage.com/400x300/ddd/bbb"></a>
+          <a href="#img-15"><img loading="lazy" alt="" src="//dummyimage.com/300x400/ddd/bbb"></a>
+        </div>
+
+      </section>
+
+      <section id="codex"> <!-- ANOTHER PAGE -->
+        <p> Wat heb ik al
+            - kleding items
+            - vrije tijd dingen/tijdsbestek/notebooks
+        </p>
+
+        <p>This page is not referenced in the menu, yet it exists.</p>
+        <p><a href="#about">← back</a></p>
+
+      </section>
+
+      <section id="maattabel"> <!-- PORTFOLIO -->
+        <p>convert to inches too </p>
+
+        <div class="slides">
+          <figure><img loading="lazy" alt="" src="//dummyimage.com/4000x3000/ddd/bbb"></figure>
+          <figure><img loading="lazy" alt="" src="//dummyimage.com/3000x4000/ddd/bbb"></figure>
+          <figure><img loading="lazy" alt="" src="//dummyimage.com/4000x3000/ddd/bbb"></figure>
+          <figure>
+            <p>You could also have text over here…</p>
+          </figure>
+          <figure>
+            <img loading="lazy" alt="" src="//dummyimage.com/1000x1000/ddd/bbb">
+            <figcaption>…or image captions</figcaption>
+          </figure>
+          <figure style="background:#fdcb39">
+            <img loading="lazy" alt="" src="//dummyimage.com/3000x4000/ddd/bbb">
+            <figcaption>add a solid background</figcaption>
+          </figure>
+          <figure class="cover">
+            <img loading="lazy" alt="" src="https://64.media.tumblr.com/7904066936b9324571738bbbeeb082e9/tumblr_myopxy8uJI1qz4vi0o1_1280.jpg">
+            <p style="color:#fff">or go full bleed</p>
+          </figure>
+        </div>
+
+      </section>
+
+    </main>
+
+    <!-- ----------
+    LIGHTBOX IMAGES
+    ----------- -->
+
+    <!-- PHOTOS grid -->
+
+    <a href="#photos" class="lightbox" id="img-01"><img loading="lazy" alt="" src="//dummyimage.com/3000x3000/ddd/bbb"></a>
+    <a href="#photos" class="lightbox" id="img-02"><img loading="lazy" alt="" src="//dummyimage.com/4000x3000/ddd/bbb"></a>
+    <a href="#photos" class="lightbox" id="img-03"><img loading="lazy" alt="" src="//dummyimage.com/3000x4000/ddd/bbb"></a>
+    <a href="#photos" class="lightbox" id="img-04"><img loading="lazy" alt="" src="//dummyimage.com/3000x3000/ddd/bbb"></a>
+    <a href="#photos" class="lightbox" id="img-05"><img loading="lazy" alt="" src="//dummyimage.com/4000x3000/ddd/bbb"></a>
+    <a href="#photos" class="lightbox" id="img-06"><img loading="lazy" alt="" src="//dummyimage.com/3000x4000/ddd/bbb"></a>
+    <a href="#photos" class="lightbox" id="img-07"><img loading="lazy" alt="" src="//dummyimage.com/3000x3000/ddd/bbb"></a>
+    <a href="#photos" class="lightbox" id="img-08"><img loading="lazy" alt="" src="//dummyimage.com/4000x3000/ddd/bbb"></a>
+    <a href="#photos" class="lightbox" id="img-09"><img loading="lazy" alt="" src="//dummyimage.com/3000x4000/ddd/bbb"></a>
+    <a href="#photos" class="lightbox" id="img-10"><img loading="lazy" alt="" src="//dummyimage.com/3000x3000/ddd/bbb"></a>
+    <a href="#photos" class="lightbox" id="img-11"><img loading="lazy" alt="" src="//dummyimage.com/4000x3000/ddd/bbb"></a>
+    <a href="#photos" class="lightbox" id="img-12"><img loading="lazy" alt="" src="//dummyimage.com/3000x4000/ddd/bbb"></a>
+    <a href="#photos" class="lightbox" id="img-13"><img loading="lazy" alt="" src="//dummyimage.com/3000x3000/ddd/bbb"></a>
+    <a href="#photos" class="lightbox" id="img-14"><img loading="lazy" alt="" src="//dummyimage.com/4000x3000/ddd/bbb"></a>
+    <a href="#photos" class="lightbox" id="img-15"><img loading="lazy" alt="" src="//dummyimage.com/3000x4000/ddd/bbb"></a>
+
+    <!-- Other images -->
+
+    <a href="#about" class="lightbox" id="img-about"><img loading="lazy" alt="" src="//dummyimage.com/2400x1200/ddd/bbb"></a>
+
+
+</body>
+
+
 </body>
 </html>
